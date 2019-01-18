@@ -1,0 +1,424 @@
+@font-face{
+			src: url("fonts/ProximaNova-Light.otf");
+			font-family: proxima-nova;
+		}
+		@font-face{
+			src: url("fonts/ProximaNovaCond-Regular.otf");
+			font-family: proxima-nova-especial
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style-type: none;
+			outline: 0;
+		}
+		body{
+			font-size: 16px;
+			font-family: proxima-nova, Helvetica, Times;
+		}
+		#cabecera header{
+			padding: 2em 0;
+		}
+		#cabecera h1{
+			color: #00B3FF;
+		}
+		#sinopsis h2{
+			margin-bottom: 0.5em;
+		}
+		#sinopsis p{
+			margin-bottom: .5em;
+			line-height: 1.5em;
+			font-size: 1.01em;
+		}
+		#contenido{
+			background-color: #0091EB;
+			color: #FFFFFF;
+		}
+		#especial{
+			margin: 0 auto;
+			width: 90%;
+			text-align: justify;
+			padding: 2em 0;
+			line-height: 1.5em;
+		}
+		#especial header h3{
+			margin-bottom: .5em;
+		}
+		figure{
+			margin: .5em 0 1em 0;
+			text-align: center;
+		}
+		footer{
+			text-align: center;
+			background-color: #4D4D4D;
+			color: #ffffff;
+			padding: 2em 0;
+			font-weight: bold;
+			font-size: .8em;
+		}
+		@media screen and (max-width: 320px){
+			#cabecera{
+				margin: 0 auto;
+				width: 90%;
+			}
+			#cabecera h2{
+				color: #4D4D4D;
+				font-size: .8em;
+				text-align: left;
+				padding-left: 0em;
+			}
+			nav ul li{
+				background-color: #4D4D4D;
+				border-bottom: .1em dashed orange;
+				font-size: .9em;
+			}
+			nav ul li a{
+				color: #FFFFFF;
+				padding: .6em .6em .6em 1em;
+				display: block;
+				height: 100%;
+				border-left: .5em solid orange;
+			}
+			nav ul li:last-child{
+				border-bottom: none;
+			}
+			nav ul li a:hover{
+				color: #f4f4f4;
+				border-left: .5em solid #00B3FF;
+			}
+			#sinopsis{
+				margin: 2em auto;
+				width: 90%;
+			}
+			#sinopsis img{
+				display: none;
+			}
+			#sinopsis .p_especial{
+				display: none;
+			}
+			#superior img{
+				display: none;
+			}
+			#especial img{
+				border-radius: 10px;
+				border: 0.3em solid #ffffff;
+				max-width: 97%;
+				margin-bottom: .5em;
+				padding: 0em;
+				background-color: #00B3FF;
+			}
+			#especial aside form{
+				margin-top: 1em;
+				line-height: 1em;
+				font-weight: bold;
+			}
+			#especial aside form input.entrada{
+				padding: 0.5em;
+				margin-bottom: 1em; 
+				width: 94%;
+				border-radius: 5px;
+				border: .2em solid gray;
+			}
+			#especial aside form input[type="submit"]{
+				padding: .5em 1em;
+				border-radius: 5px;
+				margin-top: .5em;
+			}
+			#especial aside form span{
+				/*color: orange;*/
+				font-weight: normal;
+			}
+		}
+		@media screen and (min-width: 321px) and (max-width: 480px){
+			#cabecera{
+				margin: 0 auto;
+				width: 90%;
+			}
+				#cabecera h2{
+				color: #4D4D4D;
+				font-size: .8em;
+				text-align: right;
+				padding-left: 0em;
+			}
+			nav ul li{
+				background-color: #4D4D4D;
+				border-bottom: .1em dashed #00B3FF;
+				font-size: .9em;
+			}
+			nav ul li a{
+				color: #FFFFFF;
+				padding: .6em .6em .6em 1em;
+				display: block;
+				height: 100%;
+				border-left: .5em solid #00B3FF;
+			}
+			nav ul li:last-child{
+				border-bottom: none;
+			}
+			nav ul li a:hover{
+				color: #f4f4f4;
+				border-left: .5em solid orange;
+			}
+			#sinopsis{
+				margin: 2em auto;
+				width: 90%;
+			}
+			#sinopsis img{
+				display: none;
+			}
+			#sinopsis .p_especial{
+				display: none;
+			}
+			#superior img{
+				display: none;
+			}
+			#especial img{
+				border-radius: 10px;
+				padding: 2%;
+				border: 0.3em solid #ffffff;
+				max-width: 95%;
+				margin-bottom: .5em;
+				background-color: orange;
+			}
+			#especial aside form{
+				margin-top: 1em;
+				line-height: 1em;
+				font-weight: bold;
+				color: orange;
+			}
+			#especial aside form input.entrada{
+				padding: 0.5em;
+				margin-bottom: 1em; 
+				width: 94%;
+				border-radius: 5px;
+				border: .2em solid orange;
+			}
+			#especial aside form input[type="submit"]{
+				padding: .5em 1em;
+				border-radius: 5px;
+				margin-top: .5em;
+			}
+			#especial aside form span{
+				color: #ffffff;
+				font-weight: normal;
+			}
+		}
+		@media screen and (min-width: 481px) and (max-width: 900px){
+			#cabecera{
+				margin: 0 auto;
+				width: 90%;
+			}
+			#cabecera h2{
+				color: #4D4D4D;
+				font-size: .8em;
+				text-align: left;
+				padding-left: 8em; 
+			}
+			nav{
+				background-color: #4D4D4D;
+				border-radius: 5px;
+			}
+			nav ul li{
+				/*background-color: #4D4D4D;*/
+				/*border-bottom: .1em dashed #00B3FF;*/
+				font-size: .9em;
+				display: inline-block;
+				padding: .5em .5em .5em 1em;
+				margin-left:-4px; 
+			}
+			nav ul li a{
+				color: #FFFFFF;
+				padding: .5em .5em .5em 1em;
+				font-weight: bold;
+				display: block;
+				height: 100%;
+				width: 100%;
+				border-left: .5em solid #00B3FF;
+			}
+			nav ul li:first-child a{
+				border-left: none;
+			}
+			nav ul li a:hover{
+				color: orange;
+				border-left-color: orange;
+			}
+			#sinopsis{
+				margin: 2em auto;
+				width: 90%;
+			}
+			#superior img{
+				display: none;
+			}
+			#sinopsis img{
+				display: none;
+			}
+			#sinopsis .p_especial{
+				display: none;
+			}
+			#especial section article{
+				width: 47%;
+				display: inline-table;
+			}
+			#especial img{
+				border-radius: 10px;
+				padding: 2%;
+				border: 0.3em solid #ffffff;
+				max-width: 95%;
+				margin-bottom: .5em;
+				background-color: orange;
+			}
+			#especial aside{
+				background-color: #ffffff;
+				color: #4D4D4D;
+				padding: .9em;
+				border-radius: 10px;
+			}
+			#especial aside form{
+				margin-top: 1em;
+				line-height: 1em;
+				font-weight: bold;
+				color: orange;
+				display: inline-block;
+			}
+			#especial aside form input.entrada{
+				padding: 0.5em;
+				margin-bottom: 1em; 
+				width: 100%;
+				border-radius: 5px;
+				border: .3em solid orange;
+			}
+			#especial aside form input[type="submit"]{
+				padding: .5em 2em;
+				border-radius: 5px;
+				margin-top: .5em;
+				background-color: orange;
+				border-color: orange;
+			}
+			#especial aside form span{
+				color: #4D4D4D;
+				font-weight: bold;
+				font-size: .8em;
+				font-weight: normal;
+			}
+		}
+		@media screen and (min-width: 901px){
+			#cabecera{
+				margin: 0 auto;
+				width: 80%;
+			}
+			#cabecera h2{
+				color: #4D4D4D;
+				font-size: .8em;
+				text-align: left;
+				padding-left: 8em;
+			}
+			nav{
+				background-color: #4D4D4D;
+				border-radius: 10px 0 10px 0;
+				text-align: center;
+			}
+			nav ul li{
+				font-size: .9em;
+				display: inline-block;
+				padding: .6em .6em .6em 1em;
+				margin-left:-4px; 
+			}
+			nav ul li a{
+				color: #FFFFFF;
+				padding: .6em .6em .6em 1em;
+				font-weight: bold;
+				display: block;
+				height: 100%;
+				width: 100%;
+				border-left: .5em solid #00B3FF;
+			}
+			nav ul li:first-child a{
+				border-left: none;
+				padding-left: 0;
+			}
+			nav ul li a:hover{
+				color: orange;
+				border-left-color: orange;	
+			}
+			#sinopsis{
+				margin: 2em auto;
+				width: 80%;
+			}
+			#sinopsis #izq{
+				float: right;
+				width: 80%;
+			}
+			#sinopsis img{
+				float: left;
+				width: 13%;
+			}
+			#sinopsis .p_especial{
+				display: inline-block;
+			}
+			#especial{
+				margin: 0 auto;
+				width: 80%;
+				text-align: justify;
+				padding: 2em 0;
+				line-height: 1.5em;
+			}
+			#superior img{
+				max-width: 100%;
+			}
+			#especial section{
+				width: 75%;
+				display: inline-table;
+				vertical-align: top;
+			}
+			#especial section article{
+				width: 47%;
+				display: inline-table;
+				margin-right: 1em;
+			}
+			#especial img{
+				border-radius: 10px;
+				padding: 2%;
+				border: 0.3em solid #ffffff;
+				max-width: 90%;
+				margin-bottom: .5em;
+				background-color: orange;
+			}
+			#especial aside{
+				background-color: #ffffff;
+				color: #4D4D4D;
+				padding: .9em;
+				border-radius: 10px;
+				width: 20%;
+				display: inline-block;
+
+			}
+			#especial aside form{
+				margin-top: 1em;
+				line-height: 1em;
+				font-weight: bold;
+				color: orange;
+				display: inline-block;
+			}
+			#especial aside form input.entrada{
+				padding: 0.5em;
+				margin-bottom: 1em; 
+				width: 85%;
+				border-radius: 5px;
+				border: .3em solid orange;
+			}
+			#especial aside form input[type="submit"]{
+				padding: .5em 2em;
+				border-radius: 5px;
+				margin-top: .5em;
+				background-color: orange;
+				border-color: orange;
+			}
+			#especial aside form span{
+				color: #4D4D4D;
+				font-weight: bold;
+				font-size: .8em;
+				font-weight: normal;
+			}
+		}
+	}
